@@ -171,3 +171,13 @@ $(window).on('load', function () {
 
 var video = document.getElementById("home-bg-video");
 video.playbackRate = 0.6; 
+
+$(function () {
+  $(".work-section").magnificPopup({
+    delegate: "a",
+    type: "image",
+    gallery: {
+      enabled: true,
+    },
+  });
+});
